@@ -20,22 +20,45 @@ body{
 
 .grid-container{
     display: grid;
-    padding: 15px 15px 15px 15px;
+    padding: 0px 0px 0px 0px;
     gap: 15px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
     grid-template-areas: 
-    ". name name name ."
+    ". name name name image-logo"
     ". bio bio bio ."
-    ". image-1 image-1 image-1 text-1"
+    /* ". image-1 image-1 image-1 text-1"
     ". image-2 image-2 image-2 text-2"
-    ". image-3 image-3 image-3 text-3"
-    ". image-4 image-4 image-4 text-4"
-    ". image-5 image-5 image-5 text-5"
-    ". image-6 image-6 image-6 text-6"
+    ". image-3 image-3 image-3 text-3" */
+    /* ". image-4 image-4 image-4 text-4"
+    ". image-5 image-5 image-5 text-5" */
+    /* ". image-6 image-6 image-6 text-6"
     ". image-7 image-7 image-7 text-7"
     ". image-8 image-8 image-8 text-8"
     ". image-9 image-9 image-9 text-9"
-    ". image-10 image-10 image-10 text-10";
+    ". image-10 image-10 image-10 text-10" */
+    ". . . . ."
+    ". . . . ."
+    ". . . . ."
+    ". titel-projekte . . ."
+    ". titel-paris titel-paris . ."
+    ". image-4 image-5 image-1 ."
+    ". image-2 image-3 text-paris ."
+    ". . . . ."
+    ". . . . ."
+    ". . . . ."
+    ". . . . ."
+    ". . . . ."
+    ". . . . ."
+    ". titel-lt1 titel-lt1 . ."
+    ". image-6 image-7 image-8 ."
+    ". image-9 image-10 text-lampen ."
+    ". . . . ."
+    ". . . . ."
+    ". . . . ."
+    ". . . . ."
+    ". . . . ."
+    ". . . . ."
+    ". text-daten text-daten . .";
 }
 
 .name{
@@ -56,6 +79,10 @@ body{
     font-weight: bold;
 }
 
+.image-logo{
+    grid-area: image-logo;
+}
+
 .bio{
     grid-area: bio;
 }
@@ -67,50 +94,193 @@ body{
     text-align: center;
 }
 
+.titel-projekte{
+    grid-area: titel-projekte;
+}
 
+.titel-projekte p{
+    font-size: 5.4rem;
+    margin: 0;
+}
+
+.titel-projekte :hover{
+    font-weight: bold;
+}
 
 .image-1{
     grid-area: image-1;
+    margin: 0;
+}
+
+.image-1 img{
+    transition: transform 0.4s ease;
+}
+
+.image-1 img:hover{
+    transform: scale(1.5);
 }
 
 .image-2{
     grid-area: image-2;
+    margin: 0;
+}
+
+.image-2 img{
+    transition: transform 0.4s ease;
+}
+
+.image-2 img:hover{
+    transform: scale(1.5);
 }
 
 .image-3{
     grid-area: image-3;
+    margin: 0;
+}
+
+.image-3 img{
+    transition: transform 0.4s ease;
+}
+
+.image-3 img:hover{
+    transform: scale(1.5);
 }
 
 .image-4{
     grid-area: image-4;
+    margin: 0;
+}
+
+.image-4 img{
+    transition: transform 0.4s ease;
+}
+
+.image-4 img:hover{
+    transform: scale(1.5);
 }
 
 .image-5{
     grid-area: image-5;
+    margin: 0;
+}
+
+.image-5 img{
+    transition: transform 0.4s ease;
+}
+
+.image-5 img:hover{
+    transform: scale(1.5);
 }
 
 .image-6{
     grid-area: image-6;
 }
 
+.image-6 img{
+    transition: transform 0.4s ease;
+}
+
+.image-6 img:hover{
+    transform: scale(1.5);
+}
+
 .image-7{
     grid-area: image-7;
+}
+
+.image-7 img{
+    transition: transform 0.4s ease;
+}
+
+.image-7 img:hover{
+    transform: scale(1.5);
 }
 
 .image-8{
     grid-area: image-8;
 }
 
+.image-8 img{
+    transition: transform 0.4s ease;
+}
+
+.image-8 img:hover{
+    transform: scale(1.5);
+}
+
 .image-9{
     grid-area: image-9;
+}
+
+.image-9 img{
+    transition: transform 0.4s ease;
+}
+
+.image-9 img:hover{
+    transform: scale(1.5);
 }
 
 .image-10{
     grid-area: image-10;
 }
 
+.image-10 img{
+    transition: transform 0.4s ease;
+}
 
-.text-1{
+.image-10 img:hover{
+    transform: scale(1.5);
+}
+
+.text-paris{
+    grid-area: text-paris;
+}
+
+.text-paris p{
+    line-height: 1.3;
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+.text-lampen{
+    grid-area: text-lampen;
+}
+
+.text-lampen p{
+    line-height: 1.3;
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+.text-daten{
+    grid-area: text-daten;
+}
+
+.text-daten p{
+    margin: 0;
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
+.titel-paris{
+    grid-area: titel-paris;
+}
+
+.titel-paris p{
+    font-size: 2rem;
+    margin: 0;
+}
+
+.titel-lt1{
+    grid-area: titel-lt1;
+}
+
+.titel-lt1 p{
+    font-size: 2rem;
+    margin: 0;
+}
+
+/* .text-1{
     grid-area: text-1;
 }
 
@@ -122,3 +292,30 @@ body{
     grid-area: text-3;
 }
 
+.text-4{
+    grid-area: text-4;
+}
+
+.text-5{
+    grid-area: text-5;
+}
+
+.text-6{
+    grid-area: text-6;
+}
+
+.text-7{
+    grid-area: text-7;
+}
+
+.text-8{
+    grid-area: text-8;
+}
+
+.text-9{
+    grid-area: text-9;
+}
+
+.text-10{
+    grid-area: text-10;
+} */
