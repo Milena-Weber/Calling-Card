@@ -3,26 +3,52 @@ img{
     height: auto;
 }
 
-
+body{
+    background-color: rgb(112, 136, 144);
+}
 
 .grid-container{
     display: grid;
     padding: 15px 15px 15px 15px;
     gap: 15px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: 
-    "name name name bio"
-    "image-1 image-1 image-1 text-1"
-    "image-2 image-2 image-2 text-2"
-    "image-3 image-3 image-3 text-3";
+    ". name name name ."
+    ". bio bio bio ."
+    ". image-1 image-1 image-1 text-1"
+    ". image-2 image-2 image-2 text-2"
+    ". image-3 image-3 image-3 text-3";
 }
 
 .name{
     grid-area: name;
 }
 
+.name h1{
+    color: darkslategray;
+    font-size: 155px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    margin: 0;
+    text-align: center;
+}
+
+.name h1:hover{
+    /* color:darkgreen; */
+    font-weight: bold;
+}
+
 .bio{
     grid-area: bio;
+}
+
+.bio p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 30px;
+    margin: 0;
+    line-height: 1.2;
+    text-align: center;
 }
 
 .image-1{
