@@ -58,7 +58,7 @@ body{
     ". . . . ."
     ". . . . ."
     ". . . . ."
-    ". text-daten text-daten . .";
+    ". text-daten text-daten . titel-mw";
 }
 
 .name{
@@ -83,6 +83,15 @@ body{
     grid-area: image-logo;
 }
 
+.titel-mw{
+    grid-area: titel-mw;
+}
+
+.titel-mw p{
+    font-size: 7rem;
+    margin: 0;
+}
+
 .bio{
     grid-area: bio;
 }
@@ -92,7 +101,13 @@ body{
     margin: 0;
     line-height: 1.2;
     text-align: center;
+    /* opacity: 1;
+    transition: opacity 0.5s ease; */
 }
+
+/* .bio p:hover{
+    opacity: 0.2;
+} */
 
 .titel-projekte{
     grid-area: titel-projekte;
@@ -127,10 +142,13 @@ body{
 
 .image-2 img{
     transition: transform 0.4s ease;
+    /* box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    transition: box-shadow 0.3 ease; */
 }
 
 .image-2 img:hover{
     transform: scale(1.5);
+    /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); */
 }
 
 .image-3{
@@ -140,10 +158,12 @@ body{
 
 .image-3 img{
     transition: transform 0.4s ease;
+    transition: transform 0.5s ease;
 }
 
 .image-3 img:hover{
     transform: scale(1.5);
+    transform: rotate(5deg);
 }
 
 .image-4{
