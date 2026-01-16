@@ -114,7 +114,7 @@ body{
 }
 
 .titel-projekte p{
-    font-size: 5.4rem;
+    font-size: 5.3rem;
     margin: 0;
 }
 
@@ -158,12 +158,12 @@ body{
 
 .image-3 img{
     transition: transform 0.4s ease;
-    transition: transform 0.5s ease;
+    /* transition: transform 0.5s ease; */
 }
 
 .image-3 img:hover{
     transform: scale(1.5);
-    transform: rotate(5deg);
+    /* transform: rotate(5deg); */
 }
 
 .image-4{
@@ -279,7 +279,7 @@ body{
 .text-daten p{
     margin: 0;
     line-height: 1.7;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 .titel-paris{
