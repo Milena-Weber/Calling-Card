@@ -15,6 +15,7 @@ body{
     font-family: "hagrid", sans-serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 15px;
 }
 
 .grid-container{
@@ -27,7 +28,14 @@ body{
     ". bio bio bio ."
     ". image-1 image-1 image-1 text-1"
     ". image-2 image-2 image-2 text-2"
-    ". image-3 image-3 image-3 text-3";
+    ". image-3 image-3 image-3 text-3"
+    ". image-4 image-4 image-4 text-4"
+    ". image-5 image-5 image-5 text-5"
+    ". image-6 image-6 image-6 text-6"
+    ". image-7 image-7 image-7 text-7"
+    ". image-8 image-8 image-8 text-8"
+    ". image-9 image-9 image-9 text-9"
+    ". image-10 image-10 image-10 text-10";
 }
 
 .name{
@@ -36,7 +44,7 @@ body{
 
 .name h1{
     color: rgb(0, 0, 0);
-    font-size: 125px;
+    font-size: 8rem;
     font-weight: 400;
     margin: 0;
     text-align: center;
@@ -53,11 +61,13 @@ body{
 }
 
 .bio p{
-    font-size: 30px;
+    font-size: 2rem;
     margin: 0;
     line-height: 1.2;
     text-align: center;
 }
+
+
 
 .image-1{
     grid-area: image-1;
@@ -71,6 +81,35 @@ body{
     grid-area: image-3;
 }
 
+.image-4{
+    grid-area: image-4;
+}
+
+.image-5{
+    grid-area: image-5;
+}
+
+.image-6{
+    grid-area: image-6;
+}
+
+.image-7{
+    grid-area: image-7;
+}
+
+.image-8{
+    grid-area: image-8;
+}
+
+.image-9{
+    grid-area: image-9;
+}
+
+.image-10{
+    grid-area: image-10;
+}
+
+
 .text-1{
     grid-area: text-1;
 }
@@ -82,3 +121,4 @@ body{
 .text-3{
     grid-area: text-3;
 }
+
