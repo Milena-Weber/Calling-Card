@@ -11,7 +11,6 @@ img{
 
 body{
     background-color: rgb(113, 129, 135);
-    /* font-family: "Avara-Bold", serif; */
     font-family: "hagrid", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -24,20 +23,9 @@ body{
     gap: 15px;
     grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
     grid-template-areas: 
-    /* ". image-milena image-milena image-milena ." */
-    
+    "image-farbfeld image-farbfeld image-farbfeld image-farbfeld image-farbfeld"
     ". name name name image-logo"
     ". bio bio bio ."
-    /* ". image-1 image-1 image-1 text-1"
-    ". image-2 image-2 image-2 text-2"
-    ". image-3 image-3 image-3 text-3"
-    ". image-4 image-4 image-4 text-4"
-    ". image-5 image-5 image-5 text-5"
-    ". image-6 image-6 image-6 text-6"
-    ". image-7 image-7 image-7 text-7"
-    ". image-8 image-8 image-8 text-8"
-    ". image-9 image-9 image-9 text-9"
-    ". image-10 image-10 image-10 text-10" */
     ". . . . ."
     ". . . . ."
     ". . . . ."
@@ -78,16 +66,6 @@ body{
     ". . . . ."
     ". . . . ."
     ". . . . ."
-    /* ". video-1 video-2 video-3 ."
-    ". . . . ."
-    ". . . . ."
-    ". . . . ."
-    ". . . . ."
-    ". . . . ."
-    ". . . . ."
-    ". . . . ."
-    ". . . . ."
-    ". . . . ." */
     ". text-daten text-daten . image-mw-logo"
     "image-balken-unten image-balken-unten image-balken-unten image-balken-unten image-balken-unten";
 }
@@ -104,11 +82,9 @@ body{
     font-weight: 400;
     margin: 0;
     text-align: center;
-    /* background-color: darkslategrey; */
 }
 
 .name h1:hover{
-    /* color:darkgreen; */
     font-weight: bold;
 }
 
@@ -121,13 +97,20 @@ body{
     margin: 0;
 }¨
 
-/* .image-milena {
-    grid-area: image-milena;
+
+.image-farbfeld{
+    grid-area: image-farbfeld;
 }
 
-.image-milena img{
+.image-farbfeld img{
+    margin: 0;
+    position: relative;
+    top: -10px;
+    left: 0px;
+    right: 0px;
     align-self: center;
-} */
+    scale: 101%;
+}
 
 
 .image-balken-unten{
@@ -157,19 +140,6 @@ body{
     z-index: 1;
 }
 
-/* .image-logo_v2{
-    grid-area: image-logo_v2;
-} */
-
-/* .titel-mw{
-    grid-area: titel-mw;
-}
-
-.titel-mw p{
-    font-size: 7rem;
-    margin: 0;
-} */
-
 .bio{
     grid-area: bio;
 }
@@ -179,13 +149,7 @@ body{
     margin: 0;
     line-height: 1.2;
     text-align: center;
-    /* opacity: 1;
-    transition: opacity 0.5s ease; */
 }
-
-/* .bio p:hover{
-    opacity: 0.2;
-} */
 
 .titel-projekte{
     grid-area: titel-projekte;
@@ -200,18 +164,6 @@ body{
     font-weight: bold;
 }
 
-/* .video-1 {
-    grid-area: video-1;
-}
-
-.video-2 {
-    grid-area: video-2;
-}
-
-.video-3 {
-    grid-area: video-3;
-} */
-
 .image-1{
     grid-area: image-1;
     margin: 0;
@@ -220,23 +172,8 @@ body{
 
 .image-1 img {
     transition: transform 0.4s ease;
-    /* transition: opacity 0.3s ease; */
 }
 
-/* .image-1 .b{
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-} */
-
-/* .image-1:hover .a{
-    opacity: 0;
-} */
-
-/* .image-1:hover .b{
-    opacity: 1;
-} */
 
 .image-1 img:hover{
     transform: scale(1.5);
@@ -259,13 +196,10 @@ body{
 
 .image-2 img{
     transition: transform 0.4s ease;
-    /* box-shadow: 0 0 0 rgba(0, 0, 0, 0);
-    transition: box-shadow 0.3 ease; */
 }
 
 .image-2 img:hover{
     transform: scale(1.5);
-    /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); */
 }
 
 .image-3{
@@ -275,12 +209,10 @@ body{
 
 .image-3 img{
     transition: transform 0.4s ease;
-    /* transition: transform 0.5s ease; */
 }
 
 .image-3 img:hover{
     transform: scale(1.5);
-    /* transform: rotate(5deg); */
 }
 
 .image-4{
@@ -495,43 +427,3 @@ body{
     font-size: 2rem;
     margin: 0;
 }
-
-/* .text-1{
-    grid-area: text-1;
-}
-
-.text-2{
-    grid-area: text-2;
-}
-
-.text-3{
-    grid-area: text-3;
-}
-
-.text-4{
-    grid-area: text-4;
-}
-
-.text-5{
-    grid-area: text-5;
-}
-
-.text-6{
-    grid-area: text-6;
-}
-
-.text-7{
-    grid-area: text-7;
-}
-
-.text-8{
-    grid-area: text-8;
-}
-
-.text-9{
-    grid-area: text-9;
-}
-
-.text-10{
-    grid-area: text-10;
-} */
