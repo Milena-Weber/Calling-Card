@@ -23,8 +23,6 @@ body{
     gap: 15px;
     grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
     grid-template-areas: 
-    "image-farbfeld image-farbfeld image-farbfeld image-farbfeld image-farbfeld"
-    ". name name name image-logo"
     ". bio bio bio ."
     ". . . . ."
     ". . . . ."
@@ -70,9 +68,13 @@ body{
     "image-balken-unten image-balken-unten image-balken-unten image-balken-unten image-balken-unten";
 }
 
-.name{
-    grid-area: name;
-    position: relative;
+.header {
+    display: flex;
+    background-color:darkslategrey;
+    z-index: 10;
+}
+
+.name {
     z-index: 1;
 }
 
@@ -88,22 +90,14 @@ body{
     font-weight: bold;
 }
 
-.image-logo{
-    grid-area: image-logo;
+/* .image-logo {
     z-index: 1;
 }
 
 .image-logo img{
     margin: 0;
-}
+} */
 
-.image-farbfeld{
-    grid-area: image-farbfeld;
-}
-
-.image-farbfeld img{
-    margin: 0;
-}
 
 .image-balken-unten{
     grid-area: image-balken-unten;
