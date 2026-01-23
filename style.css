@@ -38,6 +38,9 @@ a:hover {
 
 .grid-container{
     display: grid;
+    grid-template-rows: auto;
+    min-height: 100vh;
+    grid-auto-rows: min-content;
     padding: 0px 0px 0px 0px;
     gap: 15px;
     grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
@@ -146,6 +149,7 @@ a:hover {
     bottom: -20px;
     left: 0px;
     right: 0px;
+    /* margin-top: 40px; */
     align-self: center;
     scale: 101%;
 }
