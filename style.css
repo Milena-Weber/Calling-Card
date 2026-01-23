@@ -10,10 +10,10 @@ img{
 }
 
 body{
-    /* background-color: rgba(44, 75, 45, 0.58); */
-    background-image: image-hintergrund;
+    background-color: rgba(44, 75, 45, 0.58);
+    /* background-image: image-hintergrund;
     background-position: center;
-    background-size: cover;
+    background-size: cover; */
     font-family: "hagrid", sans-serif;
     font-weight: 400;
     font-style: normal;
