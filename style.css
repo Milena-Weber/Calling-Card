@@ -145,7 +145,7 @@ a:hover {
 
 .image-balken-unten img{
     margin: 0;
-    position: relative;
+    position: static;
     bottom: -50px;
     align-self: center;
     scale: 101%;
