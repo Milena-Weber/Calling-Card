@@ -20,6 +20,22 @@ body{
     font-size: 15px;
 }
 
+a {
+  color: rgb(54, 54, 54);       /* Farbe des Links */
+  text-decoration: none;       /* Unterstreichung entfernen */
+  font-size: 1.5rem;
+  /* background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block; */
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 .grid-container{
     display: grid;
     padding: 0px 0px 0px 0px;
@@ -81,6 +97,7 @@ body{
     /* ". video-1 video-2 video-3 ." */
 
     ". text-daten text-daten . image-mw-logo"
+    ". email . . ."
     "image-balken-unten image-balken-unten image-balken-unten image-balken-unten image-balken-unten";
 }
 
@@ -396,6 +413,11 @@ body{
     margin: 0;
     line-height: 1.7;
     font-size: 1.5rem;
+}
+
+.email {
+    grid-area: email;
+    margin-top: -20px;
 }
 
 .titel-paris{
