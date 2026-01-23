@@ -469,28 +469,84 @@ a:hover {
     grid-area: image-foto-1;
 }
 
+.image-foto-1 img{
+    transition: transform 0.4s ease;
+}
+
+.image-foto-1 img:hover{
+    transform: scale(1.5);
+}
+
 .image-foto-2 {
     grid-area: image-foto-2;
+}
+
+.image-foto-2 img{
+    transition: transform 0.4s ease;
+}
+
+.image-foto-2 img:hover{
+    transform: scale(1.5);
 }
 
 .image-foto-3 {
     grid-area: image-foto-3;
 }
 
+.image-foto-3 img{
+    transition: transform 0.4s ease;
+}
+
+.image-foto-3 img:hover{
+    transform: scale(1.5);
+}
+
 .image-foto-4 {
     grid-area: image-foto-4;
+}
+
+.image-foto-4 img{
+    transition: transform 0.4s ease;
+}
+
+.image-foto-4 img:hover{
+    transform: scale(1.5);
 }
 
 .image-foto-5 {
     grid-area: image-foto-5;
 }
 
+.image-foto-5 img{
+    transition: transform 0.4s ease;
+}
+
+.image-foto-5 img:hover{
+    transform: scale(1.5);
+}
+
 .image-foto-6 {
     grid-area: image-foto-6;
 }
 
+.image-foto-6 img{
+    transition: transform 0.4s ease;
+}
+
+.image-foto-6 img:hover{
+    transform: scale(1.5);
+}
+
 .image-foto-7{
     grid-area: image-foto-7;
+}
+
+.image-foto-7 img{
+    transition: transform 0.4s ease;
+}
+
+.image-foto-7 img:hover{
+    transform: scale(1.5);
 }
 
 /* .image-hintergrund {
